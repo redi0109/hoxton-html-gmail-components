@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    border: none;
+    background: none;
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 1;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template:
+        'header header header header' 70px
+        'left-menu main settings right-menu' 1fr/
+        200px 1fr 200px 100px;
+}
+
+.header {
+    grid-area: header;
+    place-items: start;
+    display: grid;
+    padding: 1rem;
+    background-color: rgb(208, 187, 187);
+}
+
+.header-items {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-button {
+    width: 20px;
+    height: 20px;
+}
+
+.gmail-logo {
+    width: 150px;
+
+}
+
+.search-bar {
+    background-color: rgb(217, 223, 228);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    padding: 0.1rem 5rem;
+
+}
+
+.right-header {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.support-button {
+    height: 30px;
+    width: 30px;
+}
+
+.settings-button {
+    height: 30px;
+    width: 30px;
+}
+
+.user-button {
+    height: 30px;
+    width: 30px;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    padding: 1rem;
+    background-color: rgb(242, 202, 150);
+}
+
+.main {
+    grid-area: main;
+    padding: 1rem;
+    background-color: rgb(154, 131, 102);
+}
+
+.settings {
+    grid-area: settings;
+    padding: 1rem;
+    background-color: aqua;
+}
+
+.right-menu {
+    grid-area: right-menu;
+    padding: 1rem;
+    background-color: rgb(234, 156, 54);
+}
