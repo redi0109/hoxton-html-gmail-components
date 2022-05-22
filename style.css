@@ -27,71 +27,104 @@ button:hover {
 
 
 .container {
-    width: 100vw;
     height: 100vh;
-
     display: grid;
     grid-template:
-        'header header header header' auto
-        'left-menu main settings right-menu' 1fr/
-        150px 1fr 150px 70px;
+      'header header header header' auto
+      'left-menu main settings right-menu' 1fr/
+      180px 1fr 180px 50px;
 }
 
 .header {
     grid-area: header;
     display: grid;
-    padding: 1rem;
-    background-color: rgb(216, 183, 183);
-place-items: center;
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 255, 255);
     grid-template-columns: auto 1fr auto;
+    gap: 3rem;
 }
+.header button span {
+    font-size: 1.2rem;
+    color: rgb(71, 71, 71);
+  }
 .left-header{
     display: grid;
-    place-content: center;
     grid-auto-flow: column;
     align-items: center;
     gap: 0.5rem;
 }
-.gmail-logo{
-    width: 15%;
-}
 
 .header-search{
     display: grid;
-}
+    grid-template-columns: auto 1fr auto;
+   }
+
+   .search-icon{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   }
+   .search-icon span{
+        font-size: 1.2rem;
+      }
+
+      .header__search-bar {
+        border: none;
+        background-color: #f0f3f4;
+        padding: 0 0.5rem;
+        font-size: 0.7rem;
+      }
+
+
+   .search-side {
+    background-color: #f0f3f4;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    color: rgb(142, 142, 142);
+  }
 
 .right-header{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
     gap: 0.5rem;
 }
 .profile-picture{
-    width: 25%;
+    width: 45px;
 }
+
+.user{
+    border: solid 1px gray;
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+ 
+        border: 1px solid #d1d1d1;
+        border-radius: 5px;
+        padding: 2px 5px;
+      }
+
 
 .left-menu {
     grid-area: left-menu;
-    padding: 1rem;
     background-color: rgb(242, 202, 150);
-    display: grid;
 
 }
 
+
 .main {
     grid-area: main;
-    padding: 1rem;
     background-color: rgb(154, 131, 102);
-    display: grid;
+
 }
 
 .settings {
     grid-area: settings;
-    padding: 1rem;
     background-color: aqua;
-    display: grid;
 }
 
 .right-menu {
     grid-area: right-menu;
-    padding: 1rem;
     background-color: rgb(234, 156, 54);
-    display: grid;
 }
