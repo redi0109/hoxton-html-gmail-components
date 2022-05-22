@@ -5,8 +5,11 @@
 }
 
 img {
-    width: 15%;
+    width: 100%;
+    border: none;
+    background: none;
 }
+
 
 button {
     border: none;
@@ -36,16 +39,32 @@ button:hover {
 
 .header {
     grid-area: header;
-    place-items: start;
     display: grid;
     padding: 1rem;
-    background-color: rgb(208, 187, 187);
-    place-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(216, 183, 183);
+place-items: center;
+    grid-template-columns: auto 1fr auto;
 }
 .left-header{
+    display: grid;
     place-content: center;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.gmail-logo{
+    width: 15%;
+}
 
+.header-search{
+    display: grid;
+}
+
+.right-header{
+    gap: 0.5rem;
+}
+.profile-picture{
+    width: 25%;
 }
 
 .left-menu {
@@ -53,6 +72,7 @@ button:hover {
     padding: 1rem;
     background-color: rgb(242, 202, 150);
     display: grid;
+
 }
 
 .main {
