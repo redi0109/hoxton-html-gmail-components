@@ -5,7 +5,7 @@
 }
 
 img {
-    width: 100%;
+    width: 15%;
 }
 
 button {
@@ -29,9 +29,9 @@ button:hover {
 
     display: grid;
     grid-template:
-        'header header header header' 70px
+        'header header header header' auto
         'left-menu main settings right-menu' 1fr/
-        200px 1fr 200px 100px;
+        150px 1fr 150px 70px;
 }
 
 .header {
@@ -40,6 +40,12 @@ button:hover {
     display: grid;
     padding: 1rem;
     background-color: rgb(208, 187, 187);
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.left-header{
+    place-content: center;
+
 }
 
 .left-menu {
