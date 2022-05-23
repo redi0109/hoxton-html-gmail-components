@@ -1,74 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hoxton-html-gmail-layout</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="left-header">
-                <button>
-                <span class="material-symbols-outlined">
-               menu
-                </span>
+      <header class="header">
+        <div class="left-header">
+          <button>
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <img
+            class="gmail-logo"
+            src="https://cdn.vox-cdn.com/thumbor/8fWz6qpiMYMsZhY4vrc9Vhl5yL8=/0x110:1320x770/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/21939811/newgmaillogo.jpg"
+            alt="gmail logo"
+          />
+        </div>
+        <div class="header-search">
+          <div class="search-icon search-side">
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+          <div class="search">
+            <input class="search-bar" type="search" placeholder="Search mail" />
+          </div>
+          <div class="expand-icon search-side">
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+        </div>
+        <div class="right-header">
+          <div class="buttons">
+            <button>
+              <span class="material-symbols-outlined"> help </span>
             </button>
-                <img class="gmail-logo" src="https://cdn.vox-cdn.com/thumbor/8fWz6qpiMYMsZhY4vrc9Vhl5yL8=/0x110:1320x770/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/21939811/newgmaillogo.jpg" alt="gmail logo">
+            <button>
+              <span class="material-symbols-outlined"> settings </span>
+            </button>
+            <button>
+              <span class="material-symbols-outlined"> apps </span>
+            </button>
+          </div>
+          <div class="user">
+            <span> Demir Boraj </span>
+            <span>
+              <img
+                class="profile-picture"
+                src="https://yt3.ggpht.com/yti/APfAmoGDUdmtSLwc3FYtlbZk2qhoWzvswasTWVkuk0OokQ=s88-c-k-c0x00ffffff-no-rj-mo"
+                alt="profile picture"
+              />
+            </span>
+          </div>
+        </div>
+      </header>
+      <aside class="left-menu">
+        <nav>
+          <ul>
+            <div class="left-menu-item">
+               <div class="first-element">
+                <div class="icon"> <span class="material-symbols-outlined">
+                    inbox
+                </span>
             </div>
-            <div class="header-search">  
-           <div class="search-icon search-side">
-                <span class="material-symbols-outlined">
-                    search
-                  </span>         
-                </div>
-                <div class="search">
-<input class="search-bar" type="search"  placeholder="Search mail">
-</div>
-<div class="expand-icon search-side">
-<span class="material-symbols-outlined">
-    expand_more
-  </span>     
-</div>
+                <div class="list-item"><li><a href="#"> Inbox</a></li></div>
+                <div class="number"> 4</div>
             </div>
-            <div class="right-header">
-                <div class="buttons">
-                <button>
-                <span class="material-symbols-outlined">
-                   help
-                    </span>
-                </button>
-                <button>
-                    <span class="material-symbols-outlined">
-                      settings
-                        </span>
-                   </button>
-                   <button>
-                    <span class="material-symbols-outlined">
-                      apps
-                    </span>
-                  </button>
-                </div>
-                <div class="user">
-                    <span>
-                        Demir Boraj
-                   </span>
-                   <span>
-                 <img class="profile-picture" src="https://yt3.ggpht.com/yti/APfAmoGDUdmtSLwc3FYtlbZk2qhoWzvswasTWVkuk0OokQ=s88-c-k-c0x00ffffff-no-rj-mo" alt="profile picture">
-                 </span>
-                </div>
+            <div class="second-element">
+                <div class="icon"> <span class="material-symbols-outlined">
+                starred
+                </span>
             </div>
-        </header>
-        <div class="left-menu">left menu</div>
-        <main class="main">main</main>
-        <div class="settings">Quick settings</div>
-        <div class="right-menu">right menu</div>
+                <div class="list-item"><li><a href="#">Starred</a></li></div>
+                <div class="number">6</div>
+            </div>
+            <!-- <div class="left-menu-item"> <li><a href="#"> Snoozed</a></li></div>
+            <div class="left-menu-item"><li><a href="#"> Important</a></li></div>
+            <div class="left-menu-item"><li><a href="#"> Sent</a></li></div>
+            <div class="left-menu-item"><li><a href="#"> Team</a></li></div>
+            <div class="left-menu-item"><li><a href="#"> New RFPs</a></li></div>
+            <div class="left-menu-item"> <li><a href="#"> Projects</a></li></div>
+            <div class="left-menu-item"><li><a href="#"> Personal</a></li></div> -->
+            </div>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main">main</main>
+      <div class="settings">Quick settings</div>
+      <div class="right-menu">right menu</div>
     </div>
-</body>
-
+  </body>
 </html>

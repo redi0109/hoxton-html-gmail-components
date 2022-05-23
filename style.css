@@ -1,130 +1,159 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    width: 100%;
-    border: none;
-    background: none;
+  width: 100%;
+  border: none;
+  background: none;
 }
 
-
 button {
-    border: none;
-    background: none;
-    opacity: 0.8;
+  border: none;
+  background: none;
+  opacity: 0.8;
 }
 
 button:active {
-    opacity: 1;
+  opacity: 1;
 }
 
 button:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
-
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template:
-      'header header header header' auto
-      'left-menu main settings right-menu' 1fr/
-      180px 1fr 180px 50px;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header header header header" auto
+    "left-menu main settings right-menu" 1fr/
+    180px 1fr 180px 50px;
 }
 
 .header {
-    grid-area: header;
-    display: grid;
-    padding: 0.5rem 1rem;
-    background-color: rgb(255, 255, 255);
-    grid-template-columns: auto 1fr auto;
-    gap: 3rem;
+  grid-area: header;
+  display: grid;
+  padding: 0.5rem 1rem;
+  background-color: rgb(255, 255, 255);
+  grid-template-columns: auto 1fr auto;
+  gap: 3rem;
 }
+
 .header button span {
-    font-size: 1.2rem;
-    color: rgb(71, 71, 71);
-  }
-.left-header{
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 0.5rem;
+  font-size: 1.2rem;
+  color: rgb(71, 71, 71);
 }
 
-.header-search{
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-   }
-
-   .search-icon{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-   }
-   .search-icon span{
-        font-size: 1.2rem;
-      }
-
-      .header__search-bar {
-        border: none;
-        background-color: #f0f3f4;
-        padding: 0 0.5rem;
-        font-size: 0.7rem;
-      }
-
-
-   .search-side {
-    background-color: #f0f3f4;
-    display: grid;
-    place-items: center;
-    padding: 5px;
-    color: rgb(142, 142, 142);
-  }
-
-.right-header{
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 0.5rem;
+.left-header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 0.5rem;
 }
-.profile-picture{
-    width: 45px;
+.gmail-logo {
+  width: 150px;
 }
 
-.user{
-    border: solid 1px gray;
-    align-items: center;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 0.5rem;
- 
-        border: 1px solid #d1d1d1;
-        border-radius: 5px;
-        padding: 2px 5px;
-      }
+.header-search {
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
 
+.search-icon {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search-icon span {
+  font-size: 1.2rem;
+}
+.expand-icon {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-bar {
+  border: none;
+  background-color: #f0f3f4;
+  padding: 0 0.5rem;
+  font-size: 0.7rem;
+}
+
+.search-side {
+  background-color: #f0f3f4;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  color: rgb(142, 142, 142);
+}
+
+.right-header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+.profile-picture {
+  width: 45px;
+}
+
+.user {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
 
 .left-menu {
-    grid-area: left-menu;
-    background-color: rgb(242, 202, 150);
+  grid-area: left-menu;
+  background-color: rgb(210, 206, 206);
+  display: grid;
+}
 
+.left-menu-item{
+padding: 5px 20px 20px;
+}
+
+.first-element{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.second-element{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    pad
 }
 
 
 .main {
-    grid-area: main;
-    background-color: rgb(154, 131, 102);
-
+  grid-area: main;
+  background-color: rgb(154, 131, 102);
 }
 
 .settings {
-    grid-area: settings;
-    background-color: aqua;
+  grid-area: settings;
+  background-color: aqua;
 }
 
 .right-menu {
-    grid-area: right-menu;
-    background-color: rgb(234, 156, 54);
+  grid-area: right-menu;
+  background-color: rgb(234, 156, 54);
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
